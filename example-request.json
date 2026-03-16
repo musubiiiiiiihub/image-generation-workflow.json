@@ -1,0 +1,1085 @@
+{
+  "input": {
+    "workflow": {
+      "8": {
+        "inputs": {
+          "images": [
+            "23",
+            5
+          ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+          "title": "PreviewImage"
+        }
+      },
+      "15": {
+        "inputs": {
+          "value": 0.81,
+          "positive": [
+            "222",
+            0
+          ],
+          "negative": [
+            "229",
+            0
+          ],
+          "control_net": [
+            "16",
+            0
+          ],
+          "image": [
+            "18",
+            0
+          ]
+        },
+        "class_type": "ControlNetApplyAdvanced",
+        "_meta": {
+          "title": "ControlNetApplyAdvanced"
+        }
+      },
+      "16": {
+        "inputs": {
+          "control_net_name": "OpenPoseXL2.safetensors"
+        },
+        "class_type": "ControlNetLoader",
+        "_meta": {
+          "title": "ControlNetLoader"
+        }
+      },
+      "18": {
+        "inputs": {
+          "text": "enable"
+        },
+        "class_type": "DWPreprocessor",
+        "_meta": {
+          "title": "DWPreprocessor"
+        }
+      },
+      "19": {
+        "inputs": {
+          "images": [
+            "18",
+            0
+          ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+          "title": "PreviewImage"
+        }
+      },
+      "23": {
+        "inputs": {
+          "text": "enable",
+          "model": [
+            "204",
+            0
+          ],
+          "positive": [
+            "102",
+            0
+          ],
+          "negative": [
+            "102",
+            1
+          ],
+          "noise_seed": [
+            "24",
+            0
+          ],
+          "cfg": [
+            "213",
+            0
+          ],
+          "steps": [
+            "214",
+            0
+          ],
+          "sampler_name": [
+            "217",
+            0
+          ],
+          "scheduler": [
+            "218",
+            0
+          ]
+        },
+        "class_type": "KSampler Adv. (Efficient)",
+        "_meta": {
+          "title": "KSampler Adv. (Efficient)"
+        }
+      },
+      "24": {
+        "inputs": {
+          "value": 22706279666968
+        },
+        "class_type": "Seed Generator",
+        "_meta": {
+          "title": "Seed Generator"
+        }
+      },
+      "26": {
+        "inputs": {
+          "value": 0.45,
+          "positive": [
+            "15",
+            0
+          ],
+          "negative": [
+            "15",
+            1
+          ],
+          "control_net": [
+            "27",
+            0
+          ]
+        },
+        "class_type": "ControlNetApplyAdvanced",
+        "_meta": {
+          "title": "ControlNetApplyAdvanced"
+        }
+      },
+      "27": {
+        "inputs": {
+          "control_net_name": "SDXL\\TTPLANET_Controlnet_Tile_realistic_v2_fp16.safetensors"
+        },
+        "class_type": "ControlNetLoader",
+        "_meta": {
+          "title": "ControlNetLoader"
+        }
+      },
+      "28": {
+        "inputs": {
+          "IMAGE": [
+            "117",
+            0
+          ]
+        },
+        "class_type": "Anything Everywhere",
+        "_meta": {
+          "title": "Image Anything"
+        }
+      },
+      "36": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "Openpose"
+        }
+      },
+      "37": {
+        "inputs": {
+          "value": 384,
+          "image": [
+            "70",
+            0
+          ],
+          "model": [
+            "54",
+            0
+          ],
+          "clip": [
+            "54",
+            5
+          ],
+          "vae": [
+            "54",
+            4
+          ],
+          "positive": [
+            "54",
+            1
+          ],
+          "negative": [
+            "54",
+            2
+          ],
+          "bbox_detector": [
+            "39",
+            0
+          ],
+          "seed": [
+            "247",
+            0
+          ],
+          "steps": [
+            "248",
+            0
+          ],
+          "cfg": [
+            "249",
+            0
+          ],
+          "sampler_name": [
+            "250",
+            0
+          ],
+          "scheduler": [
+            "253",
+            0
+          ]
+        },
+        "class_type": "FaceDetailer",
+        "_meta": {
+          "title": "FaceDetailer"
+        }
+      },
+      "38": {
+        "inputs": {
+          "MODEL": [
+            "197",
+            0
+          ]
+        },
+        "class_type": "Anything Everywhere3",
+        "_meta": {
+          "title": "Anything Everywhere3"
+        }
+      },
+      "39": {
+        "inputs": {
+          "filename": "bbox/face_yolov8n_v2.pt"
+        },
+        "class_type": "UltralyticsDetectorProvider",
+        "_meta": {
+          "title": "UltralyticsDetectorProvider"
+        }
+      },
+      "40": {
+        "inputs": {
+          "images": [
+            "37",
+            0
+          ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+          "title": "PreviewImage"
+        }
+      },
+      "47": {
+        "inputs": {
+          "value": 640
+        },
+        "class_type": "CR SDXL Aspect Ratio",
+        "_meta": {
+          "title": "CR SDXL Aspect Ratio"
+        }
+      },
+      "48": {
+        "inputs": {
+          "LATENT": [
+            "47",
+            4
+          ]
+        },
+        "class_type": "Anything Everywhere",
+        "_meta": {
+          "title": "Anything Everywhere"
+        }
+      },
+      "50": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "Tile"
+        }
+      },
+      "54": {
+        "inputs": {
+          "filename": "waiREALCN_v110.safetensors",
+          "lora_stack": [
+            "55",
+            2
+          ],
+          "positive": [
+            "257",
+            0
+          ],
+          "negative": [
+            "258",
+            0
+          ]
+        },
+        "class_type": "Efficient Loader",
+        "_meta": {
+          "title": "Efficient Loader"
+        }
+      },
+      "55": {
+        "inputs": {
+          "filename": "Pony\\Elimination\\milk_girl-000010.safetensors"
+        },
+        "class_type": "LoraLoaderStackedVanilla",
+        "_meta": {
+          "title": "LoraLoaderStackedVanilla"
+        }
+      },
+      "56": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "FaceDetailer"
+        }
+      },
+      "57": {
+        "inputs": {
+          "FaceDetailer": [
+            "56",
+            0
+          ],
+          "Openpose": [
+            "36",
+            0
+          ],
+          "Tile": [
+            "50",
+            0
+          ],
+          "Upscale": [
+            "65",
+            0
+          ],
+          "Scribble": [
+            "82",
+            0
+          ],
+          "Depth": [
+            "111",
+            0
+          ],
+          "Canny": [
+            "110",
+            0
+          ]
+        },
+        "class_type": "Fast Bypasser (rgthree)",
+        "_meta": {
+          "title": "Functionality Switch"
+        }
+      },
+      "60": {
+        "inputs": {
+          "filename": "Pony\\Action\\straddling_handjob_v0.1-pony.safetensors"
+        },
+        "class_type": "LoraInfo",
+        "_meta": {
+          "title": "LoraInfo"
+        }
+      },
+      "61": {
+        "inputs": {
+          "value": 2,
+          "image": [
+            "23",
+            5
+          ],
+          "positive": [
+            "23",
+            1
+          ],
+          "negative": [
+            "23",
+            2
+          ],
+          "upscale_model": [
+            "63",
+            0
+          ],
+          "seed": [
+            "24",
+            0
+          ]
+        },
+        "class_type": "UltimateSDUpscale",
+        "_meta": {
+          "title": "UltimateSDUpscale"
+        }
+      },
+      "62": {
+        "inputs": {
+          "images": [
+            "61",
+            0
+          ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+          "title": "PreviewImage"
+        }
+      },
+      "63": {
+        "inputs": {
+          "model_name": "4x_NMKD-Siax_200k.pth"
+        },
+        "class_type": "UpscaleModelLoader",
+        "_meta": {
+          "title": "UpscaleModelLoader"
+        }
+      },
+      "65": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "Upscale"
+        }
+      },
+      "70": {
+        "inputs": {
+          "value": 1,
+          "image1": [
+            "23",
+            5
+          ],
+          "image2": [
+            "61",
+            0
+          ]
+        },
+        "class_type": "CR Image Input Switch",
+        "_meta": {
+          "title": "CR Image Input Switch"
+        }
+      },
+      "81": {
+        "inputs": {
+          "filename": "SDXL\\controlnet-scribble-sdxl-1.0-anime\\diffusion_pytorch_model.safetensors",
+          "positive": [
+            "26",
+            0
+          ],
+          "negative": [
+            "26",
+            1
+          ]
+        },
+        "class_type": "workflow/Scribble",
+        "_meta": {
+          "title": "workflow/Scribble"
+        }
+      },
+      "82": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "Scribble"
+        }
+      },
+      "97": {
+        "inputs": {
+          "value": 0.4,
+          "positive": [
+            "81",
+            0
+          ],
+          "negative": [
+            "81",
+            1
+          ],
+          "control_net": [
+            "108",
+            0
+          ],
+          "image": [
+            "98",
+            0
+          ]
+        },
+        "class_type": "ControlNetApplyAdvanced",
+        "_meta": {
+          "title": "ControlNetApplyAdvanced"
+        }
+      },
+      "98": {
+        "inputs": {
+          "filename": "depth_anything_vitl14.pth"
+        },
+        "class_type": "DepthAnythingPreprocessor",
+        "_meta": {
+          "title": "DepthAnythingPreprocessor"
+        }
+      },
+      "99": {
+        "inputs": {
+          "images": [
+            "98",
+            0
+          ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+          "title": "PreviewImage"
+        }
+      },
+      "101": {
+        "inputs": {
+          "value": 100
+        },
+        "class_type": "CannyEdgePreprocessor",
+        "_meta": {
+          "title": "CannyEdgePreprocessor"
+        }
+      },
+      "102": {
+        "inputs": {
+          "value": 0.55,
+          "positive": [
+            "97",
+            0
+          ],
+          "negative": [
+            "97",
+            1
+          ],
+          "control_net": [
+            "109",
+            0
+          ],
+          "image": [
+            "101",
+            0
+          ]
+        },
+        "class_type": "ControlNetApplyAdvanced",
+        "_meta": {
+          "title": "ControlNetApplyAdvanced"
+        }
+      },
+      "103": {
+        "inputs": {
+          "images": [
+            "101",
+            0
+          ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+          "title": "PreviewImage"
+        }
+      },
+      "108": {
+        "inputs": {
+          "control_net_name": "t2i-adapter-depth-zoe-sdxl-1.0.safetensors"
+        },
+        "class_type": "ControlNetLoader",
+        "_meta": {
+          "title": "ControlNetLoader"
+        }
+      },
+      "109": {
+        "inputs": {
+          "control_net_name": "t2i-adapter-canny-sdxl-1.0.fp16.safetensors"
+        },
+        "class_type": "ControlNetLoader",
+        "_meta": {
+          "title": "ControlNetLoader"
+        }
+      },
+      "110": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "Canny"
+        }
+      },
+      "111": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "Depth"
+        }
+      },
+      "117": {
+        "inputs": {
+          "value": 1024,
+          "hint_image": [
+            "146",
+            0
+          ],
+          "image_gen_width": [
+            "47",
+            0
+          ],
+          "image_gen_height": [
+            "47",
+            1
+          ]
+        },
+        "class_type": "HintImageEnchance",
+        "_meta": {
+          "title": "HintImageEnchance"
+        }
+      },
+      "118": {
+        "inputs": {
+          "images": [
+            "117",
+            0
+          ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+          "title": "PreviewImage"
+        }
+      },
+      "146": {
+        "inputs": {
+          "image": "🍢干杯！_1_玖妍_来自小红书网页版 (1).jpg"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+          "title": "LoadImage"
+        }
+      },
+      "179": {
+        "inputs": {
+          "filename": "Pony\\Elimination\\ssugar008_mm-000010.safetensors",
+          "clip": [
+            "197",
+            1
+          ],
+          "lora_name": [
+            "185",
+            0
+          ]
+        },
+        "class_type": "SDLoraLoader",
+        "_meta": {
+          "title": "SDLoraLoader"
+        }
+      },
+      "185": {
+        "inputs": {
+          "filename": "Pony\\Action\\straddling_handjob_v0.1-pony.safetensors"
+        },
+        "class_type": "SDLoraSelector",
+        "_meta": {
+          "title": "SDLoraSelector"
+        }
+      },
+      "186": {
+        "inputs": {
+          "filename": "Pony\\Elimination\\ssugar008_mm-000010.safetensors",
+          "last_lora": [
+            "185",
+            1
+          ]
+        },
+        "class_type": "SDLoraSelector",
+        "_meta": {
+          "title": "SDLoraSelector"
+        }
+      },
+      "197": {
+        "inputs": {
+          "ckpt_name": [
+            "209",
+            0
+          ]
+        },
+        "class_type": "CheckpointLoaderSimple",
+        "_meta": {
+          "title": "CheckpointLoaderSimple"
+        }
+      },
+      "201": {
+        "inputs": {
+          "VAE": [
+            "197",
+            2
+          ]
+        },
+        "class_type": "Anything Everywhere",
+        "_meta": {
+          "title": "Anything Everywhere"
+        }
+      },
+      "204": {
+        "inputs": {
+          "filename": "Animal\\Chartreux-000002.safetensors",
+          "model": [
+            "179",
+            0
+          ],
+          "clip": [
+            "179",
+            1
+          ],
+          "last_lora": [
+            "179",
+            2
+          ],
+          "lora_name": [
+            "186",
+            0
+          ]
+        },
+        "class_type": "SDLoraLoader",
+        "_meta": {
+          "title": "SDLoraLoader"
+        }
+      },
+      "205": {
+        "inputs": {
+          "text": "ComfyUI_%time_%seed_%counter",
+          "images": [
+            "23",
+            5
+          ],
+          "lora_name": [
+            "186",
+            1
+          ],
+          "model_name": [
+            "209",
+            0
+          ],
+          "seed": [
+            "24",
+            0
+          ],
+          "steps": [
+            "214",
+            0
+          ],
+          "cfg": [
+            "213",
+            0
+          ],
+          "sampler_name": [
+            "217",
+            0
+          ],
+          "scheduler": [
+            "218",
+            0
+          ],
+          "width": [
+            "47",
+            0
+          ],
+          "height": [
+            "47",
+            1
+          ],
+          "positive": [
+            "225",
+            0
+          ],
+          "negative": [
+            "227",
+            0
+          ]
+        },
+        "class_type": "SDPromptSaver",
+        "_meta": {
+          "title": "SDPromptSaver"
+        }
+      },
+      "209": {
+        "inputs": {
+          "filename": "waiREALCN_v110.safetensors"
+        },
+        "class_type": "CheckpointNameSelector",
+        "_meta": {
+          "title": "CheckpointNameSelector"
+        }
+      },
+      "213": {
+        "inputs": {
+          "value": 6.5
+        },
+        "class_type": "Cfg Literal",
+        "_meta": {
+          "title": "CFG"
+        }
+      },
+      "214": {
+        "inputs": {
+          "value": 25
+        },
+        "class_type": "Int Literal",
+        "_meta": {
+          "title": "Steps"
+        }
+      },
+      "217": {
+        "inputs": {
+          "text": "euler"
+        },
+        "class_type": "Sampler Selector",
+        "_meta": {
+          "title": "Sampler"
+        }
+      },
+      "218": {
+        "inputs": {
+          "text": "normal"
+        },
+        "class_type": "Scheduler Selector",
+        "_meta": {
+          "title": "Scheduler"
+        }
+      },
+      "222": {
+        "inputs": {
+          "text": [
+            "225",
+            0
+          ],
+          "clip": [
+            "204",
+            1
+          ]
+        },
+        "class_type": "Text to Conditioning",
+        "_meta": {
+          "title": "Text to Conditioning"
+        }
+      },
+      "225": {
+        "inputs": {
+          "filename": "score_9, score_8_up, score_7_up, score_6_up,  score_5_up, score_4_up, photo realistic, (realistic:1.2), hyperrealistic, ultra detailed, highly detailed, detailed skin, photorealistic,\n\n(ssugar008 mm girl:1.35), 1girl,  (brown hair:1.35), black eyes, medium breasts, long hair, jewelry, ring, necklace, ponytail,\n\nblurry background, window, city, t-shirt,\nlooking at viewer, standing, upper body, close up"
+        },
+        "class_type": "SeargePromptText",
+        "_meta": {
+          "title": "Positive Prompt"
+        }
+      },
+      "227": {
+        "inputs": {
+          "text": "source_anime, blurry, score_4,score_3,score_2,score_1,ugly,bad hands,bad foot,bad_hands,bad hand,bad anatomy,worst quality,ai generated images,low quality,average quality, watermark"
+        },
+        "class_type": "SeargePromptText",
+        "_meta": {
+          "title": "Negative Prompt"
+        }
+      },
+      "229": {
+        "inputs": {
+          "text": [
+            "227",
+            0
+          ],
+          "clip": [
+            "204",
+            1
+          ]
+        },
+        "class_type": "Text to Conditioning",
+        "_meta": {
+          "title": "Text to Conditioning"
+        }
+      },
+      "232": {
+        "inputs": {
+          "text": "ComfyUI_%time_%seed_%counter",
+          "images": [
+            "61",
+            0
+          ],
+          "lora_name": [
+            "186",
+            1
+          ],
+          "model_name": [
+            "209",
+            0
+          ],
+          "seed": [
+            "47",
+            1
+          ],
+          "steps": [
+            "214",
+            0
+          ],
+          "cfg": [
+            "213",
+            0
+          ],
+          "sampler_name": [
+            "217",
+            0
+          ],
+          "scheduler": [
+            "218",
+            0
+          ],
+          "width": [
+            "47",
+            0
+          ],
+          "height": [
+            "47",
+            1
+          ],
+          "positive": [
+            "225",
+            0
+          ],
+          "negative": [
+            "227",
+            0
+          ]
+        },
+        "class_type": "SDPromptSaver",
+        "_meta": {
+          "title": "SDPromptSaver"
+        }
+      },
+      "233": {
+        "inputs": {
+          "Lora 1": [
+            "236",
+            0
+          ],
+          "Lora 2": [
+            "237",
+            0
+          ]
+        },
+        "class_type": "Fast Bypasser (rgthree)",
+        "_meta": {
+          "title": "Switch - Lora"
+        }
+      },
+      "236": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "Lora 1"
+        }
+      },
+      "237": {
+        "inputs": {},
+        "class_type": "Mute / Bypass Repeater (rgthree)",
+        "_meta": {
+          "title": "Lora 2"
+        }
+      },
+      "245": {
+        "inputs": {
+          "text": "ComfyUI_%time_%seed_%counter",
+          "images": [
+            "37",
+            0
+          ],
+          "lora_name": [
+            "260",
+            0
+          ],
+          "seed": [
+            "247",
+            0
+          ],
+          "steps": [
+            "248",
+            0
+          ],
+          "cfg": [
+            "249",
+            0
+          ],
+          "sampler_name": [
+            "250",
+            0
+          ],
+          "positive": [
+            "258",
+            0
+          ],
+          "negative": [
+            "258",
+            0
+          ]
+        },
+        "class_type": "SDPromptSaver",
+        "_meta": {
+          "title": "SDPromptSaver"
+        }
+      },
+      "247": {
+        "inputs": {
+          "value": 304008643778897
+        },
+        "class_type": "Seed Generator",
+        "_meta": {
+          "title": "Seed Generator"
+        }
+      },
+      "248": {
+        "inputs": {
+          "value": 20
+        },
+        "class_type": "Int Literal",
+        "_meta": {
+          "title": "Steps"
+        }
+      },
+      "249": {
+        "inputs": {
+          "value": 5.5
+        },
+        "class_type": "Cfg Literal",
+        "_meta": {
+          "title": "CFG"
+        }
+      },
+      "250": {
+        "inputs": {
+          "text": "euler"
+        },
+        "class_type": "Sampler Selector",
+        "_meta": {
+          "title": "Sampler Selector"
+        }
+      },
+      "253": {
+        "inputs": {
+          "text": "normal"
+        },
+        "class_type": "Scheduler Selector (Image Saver)",
+        "_meta": {
+          "title": "Scheduler Selector"
+        }
+      },
+      "257": {
+        "inputs": {
+          "filename": "score_9, score_8_up, score_7_up, score_6_up,  score_5_up, score_4_up, photo realistic, (realistic:1.2), ssugar008_girl, girl, photorealistic, looking at viewer, black eyes,"
+        },
+        "class_type": "KepStringLiteral",
+        "_meta": {
+          "title": "Positive"
+        }
+      },
+      "258": {
+        "inputs": {
+          "text": "source_anime, blurry, score_4,score_3,score_2,score_1,ugly"
+        },
+        "class_type": "KepStringLiteral",
+        "_meta": {
+          "title": "Negative"
+        }
+      },
+      "260": {
+        "inputs": {
+          "filename": "Pony\\Elimination\\milk_girl-000010.safetensors"
+        },
+        "class_type": "SDLoraSelector",
+        "_meta": {
+          "title": "SDLoraSelector"
+        }
+      },
+      "261": {
+        "inputs": {
+          "filename": "Instruction:\nThis workflow enables user to do the following\n- Text to Image, with maximum 2 Lora (You can manually clone the grouped node to have more Lora available)\n- Switches to enable Controlnet - Canny, Openpose, Tile, Depth, Canny\n- Switches to enable Upscaling and Facedetailer on the particular image\n\nStep-by-Step Guide in using this workflow\n1) Modify the Checkpoint Name under <Checkpoint Name Selector>; default VAE is used\n2) If Lora is to be used, please enable the lora functionality and select the Lora, and specify its weight under the <Lora 1> & <Lora 2> Group\n3) Select the Aspect Ratio of the generated image\n4) Fill in the positive and negative prompt and specify CFG, Steps, Sampler, and scheduler.\n\n----------------------------------Controlnet Use Guide--------------------------------\n5) If Controlnet is to be used, you may input the source image to be processed by the various processes in the section <Controlnet Source Input>\n6) Adjust the weight on the controlnet and start/end steps\n\n\n----------------------------------Upscaler and FaceDetailer---------------------------\n7) Same instruction as \"ControlNet\"\n* For FaceDetailer, you may modify the face of the non-scaled image or the scale image by switching into \"1\" or \"2\", respectively. \n\n\nExtra Functionality:\n- Lora Prompt Checker in Civitai: You can check the lora prompt and sample picture from the <Lora Info> node\n\n"
+        },
+        "class_type": "String Literal",
+        "_meta": {
+          "title": "Instruction"
+        }
+      }
+    }
+  }
+}
